@@ -81,32 +81,32 @@ tmdb:
 
 基本用法:
 ```bash
-python check_missing_episodes.py
+python main.py
 ```
 
 指定存储类型:
 ```bash
-python check_missing_episodes.py --storage local --local-path /path/to/media
-python check_missing_episodes.py --storage webdav --webdav-url http://localhost:5244/dav --webdav-username user --webdav-password pass --webdav-path /media
-python check_missing_episodes.py --storage alist --alist-url http://localhost:5244 --alist-username user --alist-password pass --alist-path /media
+python main.py --storage local --local-path /path/to/media
+python main.py --storage webdav --webdav-url http://localhost:5244/dav --webdav-username user --webdav-password pass --webdav-path /media
+python main.py --storage alist --alist-url http://localhost:5244 --alist-username user --alist-password pass --alist-path /media
 ```
 
 指定剧集:
 ```bash
-python check_missing_episodes.py --show "哥谭 (2014)"
+python main.py --show "哥谭 (2014)"
 ```
 
 其他选项:
 ```bash
-python check_missing_episodes.py --no-subscribe  # 禁用自动订阅
-python check_missing_episodes.py --download      # 启用自动下载
-python check_missing_episodes.py --threshold 3   # 设置订阅阈值为3集
-python check_missing_episodes.py --force-check-all  # 强制检查所有剧集
+python main.py --no-subscribe  # 禁用自动订阅
+python main.py --download      # 启用自动下载
+python main.py --threshold 3   # 设置订阅阈值为3集
+python main.py --force-check-all  # 强制检查所有剧集
 ```
 
 合并旧的缓存文件:
 ```bash
-python check_missing_episodes.py --merge-cache tmdb_cache.json
+python main.py --merge-cache tmdb_cache.json
 ```
 或
 ```bash
@@ -129,7 +129,7 @@ python merge_cache.py tmdb_cache.json
 - 📂 `tmdb/`: TMDB API交互
 - 📂 `media_manager/`: 媒体管理器(MoviePilot)集成
 - 📄 `main.py`: 主程序逻辑
-- 📄 `check_missing_episodes.py`: 入口点
+- 📄 `main.py`: 入口点
 
 ## 📝 输出文件
 
