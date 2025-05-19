@@ -1,0 +1,64 @@
+# 存储配置
+storage:
+  # 存储类型: rclone, alist, webdav, local
+  type: alist
+  
+  # Rclone配置
+  rclone:
+    remote: "123:媒体库/外语剧集"
+  
+  # Alist配置
+  alist:
+    url: "http://localhost:5244"
+    username: ""
+    password: ""
+    token: ""
+    path: "/媒体库/外语剧集"
+  
+  # WebDAV配置
+  webdav:
+    url: "https://localhost/webdav"
+    username: ""
+    password: ""
+    path: "/媒体库/华语剧集"
+  
+  # 本地路径配置
+  local:
+    path: "/path/to/media"
+
+# TMDB配置
+tmdb:
+  api_key: "abc123"
+  language: "zh-CN"
+  timeout: 30
+
+# MoviePilot配置
+moviepilot:
+  url: "http://localhost:3000"
+  username: ""
+  password: ""
+  auto_subscribe: true
+  auto_download: false
+  subscribe_threshold: 0
+
+# 功能配置
+features:
+  max_shows: null  # 限制处理的剧集数量，null表示处理所有剧集
+
+# 文件扩展名配置
+video_extensions:
+  - .mp4
+  - .mkv
+  - .avi
+  - .m4v
+  - .mov
+  - .flv
+  - .wmv
+  - .webm
+  - .mpeg
+  - .mpg
+  - .3gp
+  - .rm
+  - .rmvb
+  - .asf
+  - .f4v

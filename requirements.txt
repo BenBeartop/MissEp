@@ -1,0 +1,21 @@
+# HTTP和异步IO
+aiohttp>=3.8.0      # 异步HTTP客户端，用于API请求
+aiofiles>=0.8.0     # 异步文件操作
+requests>=2.28.0    # 同步HTTP客户端（备用）
+
+# 文件格式处理
+lxml>=4.9.0         # 用于WebDAV XML处理
+pyyaml>=6.0.0       # 用于YAML配置文件处理
+
+# 日期和时间处理
+python-dateutil>=2.8.2  # 日期时间处理工具
+
+# 类型提示支持
+typing-extensions>=4.5.0  # Python类型提示扩展
+
+# 命令行工具
+colorama>=0.4.6     # 命令行颜色支持
+tqdm>=4.65.0        # 进度条显示
+
+# 可选依赖
+# rclone            # 如果使用rclone后端，需要在系统中安装rclone
